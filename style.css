@@ -1,0 +1,192 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    background-color: #e7d7c3;
+  }
+  
+  header {
+    background: url('images/cafe.jpeg') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:black   ;
+  }
+  
+  header h1 {
+    font-size: 7rem;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  header p {
+    font-size: 3rem;
+    margin-top: 10px;
+    color: white;
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #8d6e63;
+    text-align: center;
+    padding: 7px;
+    z-index: 1000;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    display: inline-block;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  
+  body {
+    margin-top: 60px; /* Adjust depending on your nav height to prevent content from being hidden */
+  }
+
+  
+  nav a:hover {
+    color: #ffd700;
+    text-decoration: underline;
+  }
+  
+  section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+  }
+  #books h2{
+    color:white
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #e9c599;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    text-align: center;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 15px;
+    border-radius: 10px;
+  }
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #5e3023;
+  }
+  .order-btn {
+    margin-top: 10px;
+    padding: 10px 16px;
+    background-color: #6a4e42;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.order-btn:hover {
+    background-color: #8d6e63;
+}
+
+  
+  footer {
+    background-color: #5e3023;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  .bookshelf{
+    background:url("images/shelf.webp") center/cover repeat;
+    padding: 60px 20px;
+  }
+  .bookshelf .card{
+    background-color: #e9c599;
+    border: 2px solid #d3b48c;
+  }
+  .book-img{
+    background-color: white;
+    padding: 10px;
+  }
+  #comedy .card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+ 
+
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    nav {
+      flex-direction: column;
+    }
+    nav a {
+      display: block;
+      margin: 10px 0;
+    }
+  }
+  
